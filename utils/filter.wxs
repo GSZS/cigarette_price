@@ -1,0 +1,8 @@
+var toValuefilter = function (value) {
+  var reg = getRegExp("小盒");
+  return value.replace(reg, "");
+};
+
+module.exports = {
+  toValuefilter: toValuefilter,
+};

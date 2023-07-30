@@ -1,0 +1,51 @@
+<view class="container">
+		<view class="search">
+				<navigator class="input">
+						<image class="icon" src="/images/icon/search.png"></image>
+						<input class="txt" type="text" placeholder="搜索" value="{{searchValue}}" confirm-type="search" bindconfirm="bindconfirmSearch" bindinput="bindinputSearch"></input>
+				</navigator>
+		</view>
+		<view class="catalog">
+				<scroll-view class="nav" scroll-y="true">
+						<view class="item {{ nowId == item.id?'active' : ''}}" wx:for="{{navList}}" wx:key="id" data-name="{{ item.name }}" data-id="{{item.id}}" bindtap="switchCate">
+								{{item.name}}
+						</view>
+				</scroll-view>
+				<scroll-view class="cate" scroll-y="true" bindscrolltolower="onBottom">
+						<block wx:if="{{loading == 0}}">
+								<view class='list-wrap clearfix'>
+										<view class="goods-box {{(index+1)%2 == 0?'no-margin':''}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item" wx:key="id">
+												<navigator hover-class='none' class='navi-url'>
+														<view class="box">
+																<image src="{{item.imgUrl}}" class="image"></image>
+														</view>
+														<view class="goods-info">
+																<!-- 香烟名称 -->
+																<view class="goods-title">{{item.name}}</view>
+																<!-- 价格 -->
+																<view class="goods-intro">
+																		盒价格：
+																		<span>¥{{item.price.less}}</span>
+																</view>
+																<view class="goods-intro">
+																		条价格：
+																		<span>¥{{item.price.more}}</span>
+																</view>
+																<!-- 产地 -->
+																<view class="goods-intro">产地：{{item.place}}</view>
+																<!-- 小盒条码 -->
+																<view class="goods-intro">{{ item.code.less }}</view>
+														</view>
+												</navigator>
+										</view>
+								</view>
+						</block>
+						<block wx:else>
+								<view class="loading-wrap">
+										<image class="img" src="/images/icon/loading.gif"></image>
+										<view class="text">正在加载...</view>
+								</view>
+						</block>
+				</scroll-view>
+		</view>
+</view>
