@@ -1,9 +1,12 @@
 ### 介绍
 📖 介绍关于微信小程序云开发所用到的知识
 
+<br/>
+
 ### 开通微信云开发
 点击此[链接](https://mp.weixin.qq.com/wxamp/cloudservice/cloudrun)然后，登陆小程序后台管理
 
+<br/>
 
 ### 创建云开发环境
 1. 打开微信开发者工具，点击云开发
@@ -14,6 +17,7 @@
     
     ![3](https://file.notion.so/f/s/a1c12311-1da6-4c41-8d4b-e38611946f94/Untitled.png?id=3ea0631b-2e28-48be-856f-94962901b07d&table=block&spaceId=a047b495-3b0c-4390-a9d7-020e206f1826&expirationTimestamp=1690790400000&signature=-GTm_tRW09d4V2GyXCiOlExFtkcyuYMD9DZ-4hLFBH8&downloadName=Untitled.png)
     
+<br/>
 
 ### 创建数据库
 
@@ -59,6 +63,7 @@
     
     </aside>
     
+<br/>
 
 ### 创建云函数
 
@@ -152,7 +157,8 @@
 5. 可以通过云开发控制台查看这个云函数
     
     ![12](https://file.notion.so/f/s/64ad376a-0827-44df-be26-cc22dc9d7375/Untitled.png?id=43012739-33c9-4ad3-a28b-c706e905cfe8&table=block&spaceId=a047b495-3b0c-4390-a9d7-020e206f1826&expirationTimestamp=1690790400000&signature=4PMQoTFt9BzUZlVZGmb2mzqry37GbRj8lQw_VjPf-W8&downloadName=Untitled.png)
-    
+
+<br/>    
 
 ### 调试云函数
 
@@ -172,6 +178,7 @@
     
     ![15](https://file.notion.so/f/s/2ccd1e25-fe5d-4bbe-8f40-8aebbb784d5f/Untitled.png?id=cab11a25-433e-48e3-9fb0-e36fe2e88c69&table=block&spaceId=a047b495-3b0c-4390-a9d7-020e206f1826&expirationTimestamp=1690790400000&signature=vqm2yu7FYimcjqPUi-Lg6wTzjiKL6PI1DImawGSwMV4&downloadName=Untitled.png)
     
+<br/>
 
 ### 在小程序端调用云函数
 
@@ -216,6 +223,7 @@
     
     </aside>
     
+<br/>
 
 ### 扩展
 [微信开放文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
